@@ -8,17 +8,13 @@ Each project reflects my **personal style, creativity, and interactive design ap
  
 ## 🧾 Projects Overview
  
-| Project | Description | Folder Link | 
-
-|---------|-------------|--------|
-
-| **ChoiceMart** | Modern E-Commerce website with unique personal UI, product listing, categories, cart, and theme toggle. | [ChhoiceMart](https://github.com/cinghchivani1/Internpe/tree/main/E-commerce-website) | 
-
-| **TaskLoad** | Custom To-Do List app with personal flavor. Features: add, delete, clear tasks. | [TaskLoad](https://github.com/cinghchivani1/Internpe/tree/main/To-do-list) |
-
-| **DotPlay** | Connect Four game with dual mode: 2-player local & player vs computer. Features: hover effects, colored discs, win detection. | [DotPlay](https://github.com/cinghchivani1/Internpe/tree/main/connect-4-game) |
-
+| Project       | Description                                                                 | Folder Link                                                                                     |
+|---------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **ChoiceMart** | Modern E-Commerce website with unique personal UI, product listing, categories, cart, and theme toggle. | [ChoiceMart](https://github.com/cinghchivani1/Internpe/tree/main/E-commerce-website) |
+| **TaskLoad**   | Custom To-Do List app with personal flavor. Features: add, delete, clear tasks. | [TaskLoad](https://github.com/cinghchivani1/Internpe/tree/main/To-do-list) |
+| **DotPlay**    | Connect Four game with dual mode: 2-player local & player vs computer. Features: hover effects, colored discs, win detection. | [DotPlay](https://github.com/cinghchivani1/Internpe/tree/main/connect-4-game) |
 | **Calculator** | Simple calculator with modern UI and smooth interactivity. | [Calculator](https://github.com/cinghchivani1/Internpe/tree/main/Calculator) |
+
  
 ---
  
