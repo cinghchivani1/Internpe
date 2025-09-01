@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #93e2e7, #053b61);
+  color: #fff;
+}
+ 
+.game-container {
+  text-align: center;
+  background: #a3bdca;
+  color: #333;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  width: 400px;
+}
+ 
+h1 {
+  margin-bottom: 10px;
+  color: #6e8efb;
+}
+ 
+.mode-selection {
+  margin-bottom: 15px;
+}
+ 
+.mode-selection label {
+  margin-right: 15px;
+  font-weight: 500;
+}
+ 
+#player-turn {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(6, 50px);
+  gap: 5px;
+  justify-content: center;
+}
+ 
+.cell {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+ 
+.cell:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+ 
+.red {
+  background-color: #991b34;
+}
+ 
+.yellow {
+  background-color: #d1db13;
+}
+ 
+#reset-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  background: #6e8efb;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+#reset-btn:hover {
+  background: #a777e3;
+}
+ 

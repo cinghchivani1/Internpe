@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DotPlay - Connect Four</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>DotPlay</h1>
+ 
+    <!-- Mode selection -->
+    <div class="mode-selection">
+      <label>
+        <input type="radio" name="mode" value="2player" checked> 2-Player Local
+      </label>
+      <label>
+        <input type="radio" name="mode" value="vscomputer"> vs Computer
+      </label>
+    </div>
+ 
+    <p id="player-turn">Player 1's Turn (🔴)</p>
+    <div class="grid" id="grid"></div>
+    <button id="reset-btn">Reset Game</button>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 

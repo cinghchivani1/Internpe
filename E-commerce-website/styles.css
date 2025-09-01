@@ -1,0 +1,263 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  padding-top: 70px;
+}
+ 
+/* Header */
+header {
+  background: #ebaf5c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+ 
+}
+ 
+header .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+ 
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+ 
+nav a:hover {
+  text-decoration: underline;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+.cart {
+  background: #fff;
+  color: #ebaf5c;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+ 
+.theme-toggle {
+  margin-left: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+ 
+/* Search and Categories */
+.filters {
+  text-align: center;
+  margin: 20px;
+}
+ 
+#searchBar {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+ 
+.categories {
+  margin-top: 15px;
+}
+ 
+.categories button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #ebaf5c;
+  color: #fff;
+  transition: background 0.3s;
+}
+ 
+.categories button:hover {
+  background: #6a300e;
+}
+ 
+/* Products */
+.products {
+  padding: 40px;
+  text-align: center;
+}
+ 
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+ 
+.product {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+ 
+.product:hover {
+  transform: scale(1.05);
+}
+ 
+.product img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+ 
+.product button {
+  margin-top: 10px;
+  background: #ebaf5c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+ 
+.product button:hover {
+  background: #794111;
+}
+ 
+/* Cart */
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -3px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+}
+ 
+.cart-container.active {
+  right: 0;
+}
+ 
+.cart-container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+ 
+.cart-container button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #ebaf5c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/*Contact*/
+.contact-section {
+  padding: 40px 20px;
+  background: #f4f4f9;
+  text-align: center;
+}
+ 
+.contact-section h2 {
+  color: #ebaf5c;
+  margin-bottom: 20px;
+}
+ 
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+ 
+.contact-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ebaf5c;
+  color: #fff;
+  cursor: pointer;
+}
+ 
+.contact-section button:hover {
+  background: #a777e3;
+}
+ 
+/* Footer */
+footer {
+  background: #ebaf5c;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+ 
+/* Dark Theme */
+body.dark {
+  background: #222;
+  color: #eee;
+}
+ 
+body.dark header {
+  background: #444;
+}
+ 
+body.dark .cart {
+  background: #333;
+  color: #fff;
+}
+ 
+body.dark .categories button {
+  background: #333;
+}
+ 
+body.dark .product {
+  background: #333;
+  color: #fff;
+}
+ 
+body.dark .contact-section {
+  background: #333;      
+  color: #eee;
+}
+ 
+body.dark .contact-section input,
+body.dark .contact-section textarea {
+  background: #444;        
+  color: #fff;            
+  border: 1px solid #555;
+}
+ 
+body.dark .contact-section button {
+  background: #ebaf5c;  
+  color: #fff;
+}
+ 
+body.dark .contact-section button:hover {
+  background: #6d4916;
+}
+ 
+ 

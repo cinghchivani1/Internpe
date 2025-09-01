@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChoiceMart - Online Shopping</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div id="logo" class="logo">🛒 ChoiceMart</div>
+    <nav>
+      <a href="#logo">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+      <div class="cart" onclick="toggleCart()">🛍️ Cart (<span id="cart-count">0</span>)</div>
+      <button class="theme-toggle" onclick="toggleTheme()">🌙/☀️</button>
+    </nav>
+  </header>
+ 
+  <!-- Search and Categories -->
+  <section class="filters">
+    <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProducts()">
+    <div class="categories">
+      <button onclick="filterCategory('all')">All</button>
+      <button onclick="filterCategory('shoe')">Shoes</button>
+      <button onclick="filterCategory('watch')">Watches</button>
+      <button onclick="filterCategory('electronics')">Electronics</button>
+      <button onclick="filterCategory('bag')">Bags</button>
+    </div>
+  </section>
+ 
+  <!-- Products -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+ 
+      <div class="product" data-category="shoe">
+        <img src="images/adidas1.jpg" alt="Shoe">
+        <h3>Adidas Casual Shoe</h3>
+        <p>₹5200</p>
+        <button onclick="addToCart('Adidas Casual Shoe',5200)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/adidas2.jpeg" alt="Shoe">
+        <h3>Adidas Shoe</h3>
+        <p>₹1900</p>
+        <button onclick="addToCart('Adidas Shoe',1900)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/Jorden1.jpg" alt="Shoe">
+        <h3>Air Jorden Shoe</h3>
+        <p>₹8200</p>
+        <button onclick="addToCart('Air jorden Shoe',8200)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/Jorden2.jpg" alt="Shoe">
+        <h3>Air Jorden</h3>
+        <p>₹9900</p>
+        <button onclick="addToCart('Air Jorden',9900)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/nike1.jpg" alt="Shoe">
+        <h3>Nike Casual Shoe</h3>
+        <p>₹5200</p>
+        <button onclick="addToCart('Nike Casual Shoe',5200)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/nike2.jpg" alt="Shoe">
+        <h3>Nike Alpha Shoe</h3>
+        <p>₹13500</p>
+        <button onclick="addToCart('Nike Alpha Shoe',13500)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/puma1.jpg" alt="Shoe">
+        <h3>Puma Shoe</h3>
+        <p>₹2200</p>
+        <button onclick="addToCart('Puma Shoe',2200)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/puma2.jpg" alt="Shoe">
+        <h3>Puma Casual Shoe</h3>
+        <p>₹7900</p>
+        <button onclick="addToCart('Puma Casual Shoe',7900)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/RedTape1.jpg" alt="Shoe">
+        <h3>Redtape casual Shoe</h3>
+        <p>₹1299</p>
+        <button onclick="addToCart('Redtape casual Shoe',1299)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="shoe">
+        <img src="images/RedTape2.jpg" alt="Shoe">
+        <h3>Redtape Running Shoe</h3>
+        <p>₹1399</p>
+        <button onclick="addToCart('Redtape Running Shoe',1399)">Add to Cart</button>
+      </div>
+ 
+ 
+      <div class="product" data-category="electronics">
+        <img src="images/hp1.jpg" alt="Headphone">
+        <h3>SonicWave</h3>
+        <p>₹2200</p>
+        <button onclick="addToCart('SonicWave',2200)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp2.jpg" alt="Headphone">
+        <h3>AeroTune</h3>
+        <p>₹2000</p>
+        <button onclick="addToCart('AeroTune',2000)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp3.jpg" alt="Headphone">
+        <h3>PulseBeats</h3>
+        <p>₹1799</p>
+        <button onclick="addToCart('PulseBeats',1799)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp4.jpg" alt="Headphone">
+        <h3>EchoSphere</h3>
+        <p>₹2399</p>
+        <button onclick="addToCart('EchoSphere',2399)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp5.jpg" alt="Headphone">
+        <h3>ClarityPro</h3>
+        <p>₹3259</p>
+        <button onclick="addToCart('ClarityPro',3259)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp6.jpg" alt="Headphone">
+        <h3>VibeFlow</h3>
+        <p>₹4950</p>
+        <button onclick="addToCart('VibeFlow',4950)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp7.jpg" alt="Headphone">
+        <h3>BassForge</h3>
+        <p>₹5498</p>
+        <button onclick="addToCart('BassForge',5498)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp8.jpg" alt="Headphone">
+        <h3>ZenAudio</h3>
+        <p>₹1559</p>
+        <button onclick="addToCart('ZenAudio',1559)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp9.jpg" alt="Headphone">
+        <h3>HyperTone</h3>
+        <p>₹3259</p>
+        <button onclick="addToCart('HyperTone',3259)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="electronics">
+        <img src="images/hp10.jpg" alt="Headphone">
+        <h3>WaveRider</h3>
+        <p>₹6099</p>
+        <button onclick="addToCart('WaveRider',6099)">Add to Cart</button>
+      </div>
+     
+ 
+      <div class="product" data-category="watch">
+        <img src="images/Titan1.jpg" alt="Watch">
+        <h3>Titan Edge</h3>
+        <p>₹1599</p>
+        <button onclick="addToCart('Titan Edge',1599)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/Titan2.jpg" alt="Watch">
+        <h3>Titan Octane</h3>
+        <p>₹1990</p>
+        <button onclick="addToCart('Titan Octane',1990)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/Titan3.jpg" alt="Watch">
+        <h3>Titan Raga</h3>
+        <p>₹5459</p>
+        <button onclick="addToCart('Titan Raga',5459)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/Titan4.jpg" alt="Watch">
+        <h3>Titan Grandmaster</h3>
+        <p>₹4291</p>
+        <button onclick="addToCart('Titan Grandmaster',4291)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/sonata1.jpg" alt="Watch">
+        <h3>Sonata Classic</h3>
+        <p>₹3590</p>
+        <button onclick="addToCart('Sonata Classic',3590)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/sonata2.jpg" alt="Watch">
+        <h3>Sonata Elite</h3>
+        <p>₹7599</p>
+        <button onclick="addToCart('Sonata Elite',7599)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/van-huesen1.jpg" alt="Watch">
+        <h3>Van Heusen Prime</h3>
+        <p>₹6309</p>
+        <button onclick="addToCart('Van Heusen Prime',6309)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/van-huesen2.jpg" alt="Watch">
+        <h3>Van Heusen Luxe</h3>
+        <p>₹8249</p>
+        <button onclick="addToCart('Van Heusen Luxe',8249)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/w1.jpg" alt="Watch">
+        <h3>Casio G-Force</h3>
+        <p>₹7399</p>
+        <button onclick="addToCart('Casio G-Force',7399)">Add to Cart</button>
+      </div>
+      <div class="product" data-category="watch">
+        <img src="images/w2.jpg" alt="Watch">
+        <h3>Casio Wave</h3>
+        <p>₹6259</p>
+        <button onclick="addToCart('Casio Wave',6259)">Add to Cart</button>
+      </div>
+ 
+ 
+      <div class="product" data-category="bag">
+        <img src="images/bag1.jpg" alt="Bag">
+        <h3>TrailBlazer</h3>
+        <p>₹2559</p>
+        <button onclick="addToCart('TrailBlazer',2559)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag2.jpg" alt="Bag">
+        <h3>UrbanCarry</h3>
+        <p>₹6390</p>
+        <button onclick="addToCart('UrbanCarry',6390)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag3.jpg" alt="Bag">
+        <h3>SkyHauler</h3>
+        <p>₹5600</p>
+        <button onclick="addToCart('SkyHauler',5600)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag4.jpg" alt="Bag">
+        <h3>RoverBag</h3>
+        <p>₹6219</p>
+        <button onclick="addToCart('RoverBag',6219)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag5.jpg" alt="Bag">
+        <h3>EdgeTrek</h3>
+        <p>₹3459</p>
+        <button onclick="addToCart('EdgeTrek',3459)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag6.jpg" alt="Bag">
+        <h3>PathFinder</h3>
+        <p>₹4250</p>
+        <button onclick="addToCart('PathFinder',4250)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag7.jpg" alt="Bag">
+        <h3>MetroLoad</h3>
+        <p>₹3290</p>
+        <button onclick="addToCart('MetroLoad',3290)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag8.jpg" alt="Bag">
+        <h3>VoyagerPack</h3>
+        <p>₹6312</p>
+        <button onclick="addToCart('VoyagerPack',6312)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag9.jpg" alt="Bag">
+        <h3>VoyagerPack</h3>
+        <p>₹5479</p>
+        <button onclick="addToCart('VoyagerPack',5479)">Add to Cart</button>
+      </div>
+    <div class="product" data-category="bag">
+        <img src="images/bag10.jpg" alt="Bag">
+        <h3>VaultPack</h3>
+        <p>₹7299</p>
+        <button onclick="addToCart('VaultPack',7299)">Add to Cart</button>
+    </div>
+   
+  </section>
+ 
+  <!-- Cart -->
+  <div class="cart-container" id="cart-container">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p class="total">Total: ₹<span id="cart-total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+ 
+  <!--Contact-->
+  <section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <form id="contactForm" onsubmit="submitForm(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+ 
+ 
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SinghMart | Made with ❤️ by <b>Digvijay Singh</b></p>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+ 
+ 
